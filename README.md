@@ -79,9 +79,9 @@ For the purpose of "best" practises, I will write down all the things I have inc
    ![image-20220814172608521](./readme-images/cypress-intro.png)
 
    - https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test#What-you-ll-learn
-   - 
+   - I really like this [cheatsheet](https://cheatography.com/aiqbal/cheat-sheets/cypress-io/) when I am working through Cypress 
 
-9. Next
+9. **Next** it is up to you to practise using everything that has been configured here. Fork and branch and you will have an intuitive starting point. Go ahead and delete what exists once you have your ideas in place
 
 # Getting Started with Create React App
 
