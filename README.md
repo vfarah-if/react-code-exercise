@@ -74,7 +74,14 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
    ![image-20220814154257058](./readme-images/todo.png)
 
-8. [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) is next ...
+8. [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) is escalating the power of what can be achieved. Essentially the tools help you understand how tests, component and e2e can be acheived with ease 
+
+   ![image-20220814172608521](./readme-images/cypress-intro.png)
+
+   - https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test#What-you-ll-learn
+   - 
+
+9. Next
 
 # Getting Started with Create React App
 
