@@ -7,5 +7,5 @@
  ✔ that will make development easier like Accessibility @high @done(22-08-14 15:41)
  ✔ Document this TODO list in more detail @low @done(22-08-14 15:44)
  ✔ Add Cypress e2e testing framework to project @today @done(22-08-14 20:03)
- ☐ Make sure no hints and wanrings ready for dev to occur @low
+ ☐ Make sure no hints and warnings ready for dev to occur @low
  ☐ Do a small kata in a branch to test out how this will work @high
