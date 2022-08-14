@@ -72,6 +72,8 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
 7. Added a **todo list** with a vscode extension, which has helped me to understand the best way create a list of TODO's which also help to keep a history of architectural decisions, without formalising it in this name, but helps to create a though thread for developers mobbing or individuals focusing on what has been done and what will be done
 
+   ![image-20220814154257058](./readme-images/todo.png)
+
 8. [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) is next ...
 
 # Getting Started with Create React App
