@@ -17,7 +17,21 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
    - This comes default with **[react testing-library](https://testing-library.com/docs/react-testing-library/intro/)** and look at the [cheat sheet](https://testing-library.com/docs/react-testing-library/cheatsheet/) for testing basics. The advantage of this library is its simplicity, as well as the "*[The more your tests resemble the way your software is used, the more confidence they can give you.](https://twitter.com/kentcdodds/status/977018512689455106)"*
 
-2. [**Storybook**](https://storybook.js.org/docs/ember/get-started/install) is my next must, mainly because I believe this to be an extension of my testing paradigm, and enhancement with the way I communicate
+   - Seperate dev package from production dependencies, which is the trivial thing create app does wrong in the beginning
+
+     ![image-20220814112409895](./add-dev-packages.png)
+
+2. [**Storybook**](https://storybook.js.org/docs/ember/get-started/install) is my next must, mainly because I believe this to be an extension of my testing paradigm, and enhancement with the way I communicate with business and other developers. So the visual representation will be easiy to communicate with non-technical people, allowing for other plugins to be added that will help to show easy configuratons changes, accessibility issues and other things. There is an issue with the documentation, which means just initialising, will not work as expected ~~npx sb init typescript~~
+
+   ```bash
+   # Note this is different to the documentation because of issue https://github.com/storybookjs/storybook/issues/13593
+   npm i @storybook/react
+   npx sb init typescript
+   ```
+
+   
+
+3. dsd
 
 # Getting Started with Create React App
 
