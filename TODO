@@ -5,6 +5,6 @@
     ✔ Add storybook and make it run with the current issue in the latest @high @done(22-08-14 14:09)
     ✔ Add all the addons
  ✔ that will make development easier like Accessibility @high @done(22-08-14 15:41)
- ☐ Document this TODO list in more detail @low
+ ✔ Document this TODO list in more detail @low @done(22-08-14 15:44)
  ☐ Add Cypress e2e testing framework to project @today
  ☐ Make sure no hints and wanrings ready for dev to occur @low
