@@ -4,18 +4,20 @@ The purpose if this is to create a quick latest template (August 2022), represen
 
 For the purpose of "best" practises, I will write down all the things I have included as purposeful key decisions to help me develop this library.
 
-1. Create [react app using typescript](https://create-react-app.dev/docs/adding-typescript/)
+1. **Create [react app using typescript](https://create-react-app.dev/docs/adding-typescript/)** (see below for more details)
 
    - Typescript because you solve 15% of bugs at compile time, which I have prooved converting JS projects with Typescript
 
-   - Create react app reduce the complexity of creating a react app in the sense that I have worked on several bespokely generated node react applications and it has always been a problem to migrate to the next secure version. It is good to understand how it all works, but use this for simplicity and 9/10 times, it will be more helpful in reducing pain
+   - Create react app **reduces the complexity** of creating a react app, in the sense that I have worked on several bespokely generated node react applications, and it has always been a problem to migrate to the next secure version. It is good to understand how it all works under the hood, but use this for simplicity and 9/10 times, it will be more helpful in reducing pain and upgrade hell
 
      ```bash
      npx create-react-app react-recipes --template typescript
-
+     npm install --save typescript @types/node @types/react @types/react-dom @types/jest
      ```
 
-2. Install
+   - This comes default with **[react testing-library](https://testing-library.com/docs/react-testing-library/intro/)** and look at the [cheat sheet](https://testing-library.com/docs/react-testing-library/cheatsheet/) for testing basics. The advantage of this library is its simplicity, as well as the "*[The more your tests resemble the way your software is used, the more confidence they can give you.](https://twitter.com/kentcdodds/status/977018512689455106)"*
+
+2. [**Storybook**](https://storybook.js.org/docs/ember/get-started/install) is my next must, mainly because I believe this to be an extension of my testing paradigm, and enhancement with the way I communicate
 
 # Getting Started with Create React App
 
