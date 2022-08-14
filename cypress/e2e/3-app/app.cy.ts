@@ -24,4 +24,10 @@ describe('app', () => {
       .contains('Edit src/App.tsx and save to reload');
     cy.get('header[class="App-header"] > p > code').should('exist');
   });
+
+  it('should present a test button', () => {
+    cy.get('header[class="App-header"] > button')
+      .should('exist')
+      .contains('Test');
+  });
 });
