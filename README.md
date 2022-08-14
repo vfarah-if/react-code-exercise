@@ -29,8 +29,6 @@ For the purpose of "best" practises, I will write down all the things I have inc
    npx storybook init typescript
    ```
 
-   ![image-20220814115239657](./storybook-dependencies.png)
-
 3. dsd
 
 # Getting Started with Create React App
