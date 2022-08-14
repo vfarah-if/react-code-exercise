@@ -18,7 +18,7 @@ describe('Button', () => {
     const mockCallBack = jest.fn();
     render(<Button label='Test Click' onClick={mockCallBack} />);
 
-    fireEvent.click(getButton());
+    fireEvent.click(getButtonElement());
 
     expect(mockCallBack).toHaveBeenCalledTimes(1);
   });
@@ -37,8 +37,8 @@ describe('Button', () => {
       />
     );
 
-    expect(getButton()).toHaveTextContent('Button');
-    expect(getButton()).toMatchSnapshot('primary button');
+    expect(getButtonElement()).toHaveTextContent('Button');
+    expect(getButtonElement()).toMatchSnapshot('primary button');
   });
 
   test('should create a small secondry button', () => {
@@ -49,13 +49,13 @@ describe('Button', () => {
       />
     );
 
-    expect(getButton()).toMatchSnapshot('small button');
+    expect(getButtonElement()).toMatchSnapshot('small button');
   });
 
   test('should create a secondry button', () => {
     render(<SecondaryButton label={SmallButton.args?.label || ''} />);
 
-    expect(getButton()).toMatchSnapshot('secondry button');
+    expect(getButtonElement()).toMatchSnapshot('secondry button');
   });
 
   test('should create a large button', () => {
@@ -66,7 +66,7 @@ describe('Button', () => {
       />
     );
 
-    expect(getButton()).toMatchSnapshot('large button');
+    expect(getButtonElement()).toMatchSnapshot('large button');
   });
 
   test('should create a geen background button', () => {
@@ -79,7 +79,7 @@ describe('Button', () => {
       />
     );
 
-    expect(getButton()).toMatchSnapshot('green background button');
+    expect(getButtonElement()).toMatchSnapshot('green background button');
   });
 
   test('should create a yellow labeless button as alternative test if devaiting from convenrional tests', () => {
@@ -90,10 +90,10 @@ describe('Button', () => {
       />
     );
 
-    expect(getButton()).toMatchSnapshot('labelless yellow button');
+    expect(getButtonElement()).toMatchSnapshot('labelless yellow button');
   });
 });
 
-function getButton(): Element | Node | Document | Window {
+function getButtonElement(): Element | Node | Document | Window {
   return screen.getByRole('button');
 }

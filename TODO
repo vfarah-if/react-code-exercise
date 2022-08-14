@@ -1,0 +1,6 @@
+✔ Create basic node repository in git @today @done(22-08-14 9:00)
+✔ Create a react to intance with documentation using typescript @critical @done(22-08-14 10:00)
+✔ Utilise yarn as this is easier to run and upgrade relevent details and do interactive upgrade @low @done(22-08-14 12:00)
+☐ Add storybook latest
+    ✔ Add storybook and make it run with the current issue in the latest @high @done(22-08-14 14:09)
+    ☐ Add all the addons that will make development easier like Accessibility, 

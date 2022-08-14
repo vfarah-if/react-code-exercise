@@ -58,7 +58,10 @@
       "src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/",
       "!src/**/*.stories.tsx",
-      "!src/**/index.ts"
+      "!src/**/index.tsx",
+      "!src/**/index.ts",
+      "!src/**/react-app-env.d.ts",
+      "!src/**/reportWebVitals.ts"
     ],
     "coverageThreshold": {
       "global": {

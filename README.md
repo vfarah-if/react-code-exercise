@@ -38,11 +38,19 @@ For the purpose of "best" practises, I will write down all the things I have inc
    npm i --save-dev @types/styled-components       
    ```
 
-4. Added a **button component** as an example of how I storybook test drive my code (**SB TDD**) as well as making sure storybook is working as expected. This is not unique to me, a pattern that storybook endorses and drives simalar to the way I have done it, which I found to be particulary useful when developing complex visual components. So I start with creating a component with a storybook, even before I have written a test. The only reason I deviate from classical TDD, in this case, is because I can cognitively get my head around CSS, React, Javascript easier through Storybook visual components which I found a little harder not having a visual idea. You can train yourself to do either, but as a visual person and experience with other frontend developers, I felt this was more intuituve and an easier way that developers will start doing TDD and not code after development. Then I can take those scenarios and seal them as snapshot tests and then simply write behavioural tests only (which can be done test first style). I can also install storybook testing which automatically generates the snapshots and makes sure the storybook is sealed automatically. I personally did not go with this, on this occasion, as I wanted this to be explicit about what got tested and where these tests where generated.
+4. Added a **button component** as an example of how I storybook test drive my code (**SB TDD**) as well as making sure storybook is working as expected. This is not unique to me, a pattern that storybook endorses and drives simalar to the way I have done it, which I found to be particulary useful when developing complex visual components. So I start with creating a component with a storybook, even before I have written a test. The only reason I deviate from classical TDD, in this case, is because I can cognitively get my head around CSS, React, Javascript easier through Storybook visual components which I found a little harder not having a visual idea. You can train yourself to do either, but as a visual person and experience with other frontend developers, I felt this was more intuituve and an easier way that developers will start doing TDD and not code after development. Then I can take those scenarios and seal them as snapshot tests and then simply write behavioural tests only (which can be done test first style). I can also install storybook testing which automatically generates the snapshots and makes sure the storybook is sealed automatically. I personally did not go with this, on this occasion, as I wanted this to be explicit about what got tested and where these tests where generated
 
    ![image-20220814132357940](./sb-tdd-scenario-green-button.png)
 
-5. sdfs
+5. Created a code coverage output to add to some CI pipeline to make sure a minimum standard is met. This value can be driven by the team and can be seen as a [useless metric](https://betterprogramming.pub/is-code-coverage-a-useless-metric-bc76e0fde9e), but I like to have it so I can make sure I did TDD all the happy and unhappy test paths of the component
+
+   ![image-20220814135213339](./covereage.png)
+
+6. Add `yarn` and `yarn interactive` by installing `yarn plugin import interactive-tools`
+
+7. Added a **todo list** with a vscode extension, which has helped me to understand the best way create a list of TODO's which also help to keep a history of architectural decisions, without formalising it in this name, but helps to create a though thread for developers mobbing or individuals focusing on what has been done and what will be done
+
+8. [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) is next ...
 
 # Getting Started with Create React App
 
