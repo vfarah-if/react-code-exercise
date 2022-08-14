@@ -19,17 +19,39 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
    - Seperate dev package from production dependencies, which is the trivial thing create app does wrong in the beginning
 
-     ![image-20220814112409895](./add-dev-packages.png)
+     ![image-20220814112409895](./readme-images/add-dev-packages.png)
 
 2. [**Storybook**](https://storybook.js.org/docs/ember/get-started/install) is my next must, mainly because I believe this to be an extension of my testing paradigm, and enhancement with the way I communicate with non-technical/technical people, allowing for other plugins to be added that will help to show easy configuratons changes, accessibility issues and other things. There is an issue with the documentation, or the latest storybook, which means just initialising, will not work as expected ~~npx sb init typescript~~
 
    ```bash
    # Note this is different to the documentation https://github.com/storybookjs/storybook/issues/13593
-   npm i --save-dev webpack @storybook/react    
+   npm i --save-dev webpack @storybook/react @storybook/addon-a11y @storybook/addon-actions @storybook/addon-docs @storybook/addon-storysource    
    npx storybook init typescript
    ```
 
-   ![image-20220814123850841](/Users/farahvi/Dev/react-code-exercise/storybook-example.png)
+   ![image-20220814123850841](./readme-images/storybook-example.png)
+
+   - Configure main.js with all the necessary addons, and see the results within the docs, 
+
+     ```javascript
+     module.exports = {
+       stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+       addons: [
+         '@storybook/preset-create-react-app',
+         '@storybook/addon-a11y',
+         '@storybook/addon-docs',
+         '@storybook/addon-controls',
+       ],
+       core: {
+         builder: 'webpack5',
+       },
+     };
+     
+     ```
+
+   ![image-20220814153103728](./readme-images/storybook-docs.png)
+
+   ![image-20220814153225853](./readme-images/storybook-ally.png)
 
 3. Add [styled components](https://styled-components.com/) a popular way of developing components using react. Feel free to use CSS or other default react ways of doing this
 
@@ -40,11 +62,11 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
 4. Added a **button component** as an example of how I storybook test drive my code (**SB TDD**) as well as making sure storybook is working as expected. This is not unique to me, a pattern that storybook endorses and drives simalar to the way I have done it, which I found to be particulary useful when developing complex visual components. So I start with creating a component with a storybook, even before I have written a test. The only reason I deviate from classical TDD, in this case, is because I can cognitively get my head around CSS, React, Javascript easier through Storybook visual components which I found a little harder not having a visual idea. You can train yourself to do either, but as a visual person and experience with other frontend developers, I felt this was more intuituve and an easier way that developers will start doing TDD and not code after development. Then I can take those scenarios and seal them as snapshot tests and then simply write behavioural tests only (which can be done test first style). I can also install storybook testing which automatically generates the snapshots and makes sure the storybook is sealed automatically. I personally did not go with this, on this occasion, as I wanted this to be explicit about what got tested and where these tests where generated
 
-   ![image-20220814132357940](./sb-tdd-scenario-green-button.png)
+   ![image-20220814132357940](./readme-images/sb-tdd-scenario-green-button.png)
 
 5. Created a code coverage output to add to some CI pipeline to make sure a minimum standard is met. This value can be driven by the team and can be seen as a [useless metric](https://betterprogramming.pub/is-code-coverage-a-useless-metric-bc76e0fde9e), but I like to have it so I can make sure I did TDD all the happy and unhappy test paths of the component
 
-   ![image-20220814135213339](./covereage.png)
+   ![image-20220814135213339](./readme-images/covereage.png)
 
 6. Add `yarn` and `yarn interactive` by installing `yarn plugin import interactive-tools`
 

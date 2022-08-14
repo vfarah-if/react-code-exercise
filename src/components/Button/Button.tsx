@@ -47,12 +47,17 @@ const StyledButton = styled.button`
           box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
         `}
   ${(props: ButtonProps) => props.size && sizeMapping[props.size]}
-  ${(props: ButtonProps) =>
+    ${(props: ButtonProps) =>
     props.backgroundColor &&
     css`
       background-color: ${props.backgroundColor};
     `}
-  &hover {
+    ${(props: ButtonProps) =>
+    props.label &&
+    css`
+      aria-label: ${props.label};
+    `}
+    &hover {
     transform: translate3d(0, -2px, 0);
     box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
   }
