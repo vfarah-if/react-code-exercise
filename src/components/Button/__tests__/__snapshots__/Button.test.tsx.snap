@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should create a geen background button: green background button 1`] = `
+<button
+  class="sc-bczRLJ kdthhz"
+  label="Custom background"
+>
+  Custom background
+</button>
+`;
+
+exports[`Button should create a large button: large button 1`] = `
+<button
+  class="sc-bczRLJ cGAcOK"
+  label="Button"
+>
+  Button
+</button>
+`;
+
+exports[`Button should create a primary button: primary button 1`] = `
+<button
+  class="sc-bczRLJ hKYNbp"
+  label="Button"
+>
+  Button
+</button>
+`;
+
+exports[`Button should create a secondry button: secondry button 1`] = `
+<button
+  class="sc-bczRLJ jGJCSX"
+  label="Button"
+>
+  Button
+</button>
+`;
+
+exports[`Button should create a small secondry button: small button 1`] = `
+<button
+  class="sc-bczRLJ jcxdVN"
+  label="Button"
+>
+  Button
+</button>
+`;
+
+exports[`Button should create a yellow labeless button as alternative test if devaiting from convenrional tests: labelless yellow button 1`] = `
+<button
+  class="sc-bczRLJ jGJCSX"
+  label=""
+  style="background-color: yellow;"
+/>
+`;

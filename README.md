@@ -21,7 +21,7 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
      ![image-20220814112409895](./add-dev-packages.png)
 
-2. [**Storybook**](https://storybook.js.org/docs/ember/get-started/install) is my next must, mainly because I believe this to be an extension of my testing paradigm, and enhancement with the way I communicate with non-technical/technical people, allowing for other plugins to be added that will help to show easy configuratons changes, accessibility issues and other things. There is an issue with the documentation, which means just initialising, will not work as expected ~~npx sb init typescript~~
+2. [**Storybook**](https://storybook.js.org/docs/ember/get-started/install) is my next must, mainly because I believe this to be an extension of my testing paradigm, and enhancement with the way I communicate with non-technical/technical people, allowing for other plugins to be added that will help to show easy configuratons changes, accessibility issues and other things. There is an issue with the documentation, or the latest storybook, which means just initialising, will not work as expected ~~npx sb init typescript~~
 
    ```bash
    # Note this is different to the documentation https://github.com/storybookjs/storybook/issues/13593
@@ -29,7 +29,20 @@ For the purpose of "best" practises, I will write down all the things I have inc
    npx storybook init typescript
    ```
 
-3. dsd
+   ![image-20220814123850841](/Users/farahvi/Dev/react-code-exercise/storybook-example.png)
+
+3. Add [styled components](https://styled-components.com/) a popular way of developing components using react. Feel free to use CSS or other default react ways of doing this
+
+   ```bash
+   npm i --save styled-components
+   npm i --save-dev @types/styled-components       
+   ```
+
+4. Added a **button component** as an example of how I storybook test drive my code (**SB TDD**) as well as making sure storybook is working as expected. This is not unique to me, a pattern that storybook endorses and drives simalar to the way I have done it, which I found to be particulary useful when developing complex visual components. So I start with creating a component with a storybook, even before I have written a test. The only reason I deviate from classical TDD, in this case, is because I can cognitively get my head around CSS, React, Javascript easier through Storybook visual components which I found a little harder not having a visual idea. You can train yourself to do either, but as a visual person and experience with other frontend developers, I felt this was more intuituve and an easier way that developers will start doing TDD and not code after development. Then I can take those scenarios and seal them as snapshot tests and then simply write behavioural tests only (which can be done test first style). I can also install storybook testing which automatically generates the snapshots and makes sure the storybook is sealed automatically. I personally did not go with this, on this occasion, as I wanted this to be explicit about what got tested and where these tests where generated.
+
+   ![image-20220814132357940](./sb-tdd-scenario-green-button.png)
+
+5. sdfs
 
 # Getting Started with Create React App
 
