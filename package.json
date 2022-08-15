@@ -42,7 +42,6 @@
     "storybook": "start-storybook -p 6006 -s .storybook/static",
     "build-storybook": "build-storybook -s .storybook/static",
     "coverage": "npm run test -- --coverage --watchAll=false",
-    "cypress": "cypress open",
     "e2e": "CYPRESS_retries=3 CYPRESS_coverage=false CYPRESS_integrationFolder=cypress/e2e/ cypress run --browser chrome",
     "e2e:watch": "CYPRESS_coverage=false CYPRESS_integrationFolder=cypress/e2e/ cypress open --e2e",
     "component": "CYPRESS_retries=3 CYPRESS_coverage=false CYPRESS_integrationFolder=cypress/component/ cypress run --browser chrome",

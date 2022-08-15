@@ -36,7 +36,7 @@ describe('Button', () => {
       cy.get('button')
         .should('exist')
         .should('have.attr', 'label', 'Custom background')
-        .contains('Button');
+        .contains('Custom background');
     });
   });
 });

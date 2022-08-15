@@ -78,10 +78,47 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
    ![image-20220814172608521](./readme-images/cypress-intro.png)
 
-   - https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test#What-you-ll-learn
+   ![Cypress Document Links](./readme-images/cypress-docs.png)
+
+   - **[E2E tests](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test#What-you-ll-learn)** connects to a real resource, doesn't mock anything, has real network latency and represents a slow expensive test
+
+     ![image-20220815203304286](./readme-images/cypress-e2e-test.png)
+
+   - **[Component tests](https://docs.cypress.io/guides/component-testing/writing-your-first-component-test)** run with all the visual aids, but with the speed and feel of a unit test
+
+     ![image-20220815202930710](./readme-images/cypress-component-test.png)
+
    - I really like this [cheatsheet](https://cheatography.com/aiqbal/cheat-sheets/cypress-io/) when I am working through Cypress 
 
-9. **Next** it is up to you to practise using everything that has been configured here. Fork and branch and you will have an intuitive starting point. Go ahead and delete what exists once you have your ideas in place
+   - I added the cypress testing library for developers who like react testing library
+
+9. [React testing library](https://testing-library.com/docs/react-testing-library/cheatsheet/) is very useful for unit testing
+
+10. **Next** it is up to you to practise using everything that has been configured here. Fork and branch and you will have an intuitive starting point. Go ahead and delete what exists once you have your ideas in place
+
+## Environment
+
+### Prerequisites and recomendations
+
+- Download or install [node](https://nodejs.org/en/download/) or use [nvm](https://heynode.com/tutorial/install-nodejs-locally-nvm/)
+- Download and install **[yarn](https://classic.yarnpkg.com/en/)** or convert this using npm and generate a package.lock file
+- Install **[visual studio code](https://code.visualstudio.com/)** as an ide (recommended) and install all react friendly snippets, helpers, linters to make development easier and faster
+
+| `yarn start`               | Start the application                                        |
+| -------------------------- | ------------------------------------------------------------ |
+| **`yarn build`**           | **Build a releaseable application**                          |
+| **`yarn test`**            | **Unit tests for the application**                           |
+| **`yarn install`**         | **Install the packages found within the yarn lock file**     |
+| **`yarn storybook`**       | **Start story book to visualise component scenarios**        |
+| **`yarn build-storybook`** | **Build storybook to release somewhere**                     |
+| **`yarn coverage`**        | **Run unit test coverage**                                   |
+| **`yarn e2e`**             | **Run e2e tests in headless mode for a CI pipepline**        |
+| **`yarn e2e:watch`**       | **Run e2e tests in watch mode with ui to filter and develop Cypress tests** |
+| **`yarn component`**       | **Run Cypress unit/component tests as an alternative to the default jest tests as a more visual test framework for a CI pipeline** |
+| **`yarn component`**       | **Run Cypress unit/component test in developer mode**        |
+|                            |                                                              |
+
+
 
 # Getting Started with Create React App
 
