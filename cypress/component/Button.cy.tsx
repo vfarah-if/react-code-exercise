@@ -1,20 +1,42 @@
-import { React } from 'react';
+import React from 'react';
 import { mount } from 'cypress/react';
 
-import Button from '../../src/components/Button/Button';
+import {
+  PrimaryButton,
+  GreenBackgroundButton,
+} from '../../src/components/Button/Button.stories';
 
 describe('Button', () => {
-  context('When default props passed', () => {
+  context('When configured as a primary button', () => {
     beforeEach(() => {
       mount(
         <>
-          <Button primary={true} label='Button' />
+          <PrimaryButton {...PrimaryButton.args} />
         </>
       );
     });
 
     it('should create a primary button', () => {
-      cy.get('button').should('exist');
+      cy.get('button')
+        .should('exist')
+        .should('have.attr', 'label', 'Button')
+        .contains('Button');
+    });
+  });
+  context('When configured as a green button', () => {
+    beforeEach(() => {
+      mount(
+        <>
+          <GreenBackgroundButton {...GreenBackgroundButton.args} />
+        </>
+      );
+    });
+
+    it('should create a green custom background button', () => {
+      cy.get('button')
+        .should('exist')
+        .should('have.attr', 'label', 'Custom background')
+        .contains('Button');
     });
   });
 });
