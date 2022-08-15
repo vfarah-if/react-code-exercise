@@ -15,13 +15,13 @@ For the purpose of "best" practises, I will write down all the things I have inc
      npm install --save typescript @types/node @types/react @types/react-dom @types/jest
      ```
 
-   - This comes default with **[react testing-library](https://testing-library.com/docs/react-testing-library/intro/)** and look at the [cheat sheet](https://testing-library.com/docs/react-testing-library/cheatsheet/) for testing basics. The advantage of this library is its simplicity, as well as the "*[The more your tests resemble the way your software is used, the more confidence they can give you.](https://twitter.com/kentcdodds/status/977018512689455106)"*
+   - This comes default with **[react testing-library](https://testing-library.com/docs/react-testing-library/intro/)** and look at the [cheat sheet](https://testing-library.com/docs/react-testing-library/cheatsheet/) for testing basics. The advantage of this library is its simplicity, as well as "*[The more your tests resemble the way your software is used, the more confidence they can give you.](https://twitter.com/kentcdodds/status/977018512689455106)"*
 
-   - Seperate dev package from production dependencies, which is the trivial thing create app does wrong in the beginning
+   - Seperate dev package from production dependencies, which is the trivial issue with the way *create app* does wrong in the beginning
 
      ![image-20220814112409895](./readme-images/add-dev-packages.png)
 
-2. [**Storybook**](https://storybook.js.org/docs/ember/get-started/install) is my next must, mainly because I believe this to be an extension of my testing paradigm, and enhancement with the way I communicate with non-technical/technical people, allowing for other plugins to be added that will help to show easy configuratons changes, accessibility issues and other things. There is an issue with the documentation, or the latest storybook, which means just initialising, will not work as expected ~~npx sb init typescript~~
+2. [**Storybook**](https://storybook.js.org/docs/ember/get-started/install) is my next must, mainly because I believe this to be an extension of my personal testing paradigm, and enhancement with the way I communicate with non-technical/technical people, allowing for other plugins to be added that will help to show easy configuratons changes, accessibility issues and other subtle visual aids. There is an issue with the documentation, or the latest storybook, which means just initialising, will not work as expected but I was able to hand role this for you, but usually you could have initialised story book like so ~~npx sb init typescript~~
 
    ```bash
    # Note this is different to the documentation https://github.com/storybookjs/storybook/issues/13593
@@ -53,28 +53,28 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
    ![image-20220814153225853](./readme-images/storybook-ally.png)
 
-3. Add [styled components](https://styled-components.com/) a popular way of developing components using react. Feel free to use CSS or other default react ways of doing this
+3. Add [**styled components**](https://styled-components.com/) a popular way of developing components using react. Feel free to use CSS or other default react ways of doing this
 
    ```bash
    npm i --save styled-components
    npm i --save-dev @types/styled-components       
    ```
 
-4. Added a **button component** as an example of how I storybook test drive my code (**SB TDD**) as well as making sure storybook is working as expected. This is not unique to me, a pattern that storybook endorses and drives simalar to the way I have done it, which I found to be particulary useful when developing complex visual components. So I start with creating a component with a storybook, even before I have written a test. The only reason I deviate from classical TDD, in this case, is because I can cognitively get my head around CSS, React, Javascript easier through Storybook visual components which I found a little harder not having a visual idea. You can train yourself to do either, but as a visual person and experience with other frontend developers, I felt this was more intuituve and an easier way that developers will start doing TDD and not code after development. Then I can take those scenarios and seal them as snapshot tests and then simply write behavioural tests only (which can be done test first style). I can also install storybook testing which automatically generates the snapshots and makes sure the storybook is sealed automatically. I personally did not go with this, on this occasion, as I wanted this to be explicit about what got tested and where these tests where generated
+4. Added a **button component** as an example of how I storybook test drive my code (**SB TDD**),  as well as making sure storybook is working as expected. This is not unique to me, a pattern that storybook endorses and drives, which I found to be particulary useful when developing complex visual components. I usually start with creating a component within storybook, which represents starting block, even before I have written a test. The only reason I deviate from classical TDD, *in only this case*, is because I can cognitively get my head around CSS, React, Javascript easier through Storybook visual components, which visualises what I want to do a lot easier. You can train yourself to do either, but as a visual person and experience with many frontend developers, I felt this was a more intuitive way for developers to start doing TDD or SB TDD and seemed to produce the same result I would get from traditional TDD. Then I can take those scenarios and seal them as snapshot tests and then simply write behavioural tests only (which can be done test first style). I can also install storybook testing which automatically generates the snapshots and makes sure the storybook is sealed automatically without having to do these tests manually. I personally did not go with that, on this occasion, as I wanted this to be explicit about what got tested and where these tests where generated.
 
    ![image-20220814132357940](./readme-images/sb-tdd-scenario-green-button.png)
 
-5. Created a code coverage output to add to some CI pipeline to make sure a minimum standard is met. This value can be driven by the team and can be seen as a [useless metric](https://betterprogramming.pub/is-code-coverage-a-useless-metric-bc76e0fde9e), but I like to have it so I can make sure I did TDD all the happy and unhappy test paths of the component
+5. Created a **code coverage** output to add to some CI pipeline to make sure a minimum standard is met. This value can be driven by the team and can be seen as a [*useless metric*](https://betterprogramming.pub/is-code-coverage-a-useless-metric-bc76e0fde9e), but I like to have it so I can make sure I did TDD all the happy and unhappy test paths of the component
 
    ![image-20220814135213339](./readme-images/covereage.png)
 
 6. Add `yarn` and `yarn interactive` by installing `yarn plugin import interactive-tools`
 
-7. Added a **todo list** with a vscode extension, which has helped me to understand the best way create a list of TODO's which also help to keep a history of architectural decisions, without formalising it in this name, but helps to create a though thread for developers mobbing or individuals focusing on what has been done and what will be done
+7. Added a **todo list** with a vscode extension, which has helped me to understand the best way create a list of TODO's which also help to keep a history of architectural decisions, without formalising this as an official [**ADR**](https://github.com/joelparkerhenderson/architecture-decision-record), but helps to create a thought thread for developers mobbing or individuals focusing on what has been done and what will be done
 
    ![image-20220814154257058](./readme-images/todo.png)
 
-8. [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) is escalating the power of what can be achieved. Essentially the tools help you understand how tests, component and e2e can be acheived with ease 
+8. [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) is escalating the power of what can be achieved. Essentially the tools help you understand how tests, component and e2e can be acheived with ease. I don't like the speed, feel the UI can be excessive, but I have seen junior and senior developers writing tests very quickly and efficiently using this framework 
 
    ![image-20220814172608521](./readme-images/cypress-intro.png)
 
@@ -92,9 +92,9 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
    - I added the cypress testing library for developers who like react testing library
 
-9. [React testing library](https://testing-library.com/docs/react-testing-library/cheatsheet/) is very useful for unit testing
+9. [**React testing library**](https://testing-library.com/docs/react-testing-library/cheatsheet/) is very useful for unit testing
 
-10. **Next** it is up to you to practise using everything that has been configured here. Fork and branch and you will have an intuitive starting point. Go ahead and delete what exists once you have your ideas in place
+10. **Next** it is up to you to practise using everything that has been configured here. Fork and branch this repo and you will have an intuitive starting point to just practise all these skills without setting up anything. Go ahead and delete what exists once you have your ideas in place and make this yours
 
 ## Environment
 
@@ -117,8 +117,6 @@ For the purpose of "best" practises, I will write down all the things I have inc
 | **`yarn component`**       | **Run Cypress unit/component tests as an alternative to the default jest tests as a more visual test framework for a CI pipeline** |
 | **`yarn component`**       | **Run Cypress unit/component test in developer mode**        |
 |                            |                                                              |
-
-
 
 # Getting Started with Create React App
 
