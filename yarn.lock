@@ -1583,7 +1583,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.9, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.5.0, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.14.6, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.9, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.5.0, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.18.9
   resolution: "@babel/runtime@npm:7.18.9"
   dependencies:
@@ -1814,6 +1814,21 @@ __metadata:
     postcss: ^8.2
     postcss-selector-parser: ^6.0.10
   checksum: a2045a27276a6cfe645b6e212afc217d9a43174ea7a1fa1ab8918d5a0ace72380fbd9837fe1920c547985c11a9070dc48c5c80d483d3f581ddf7aa688204d44f
+  languageName: node
+  linkType: hard
+
+"@cypress/react@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "@cypress/react@npm:6.1.0"
+  peerDependencies:
+    "@types/react": ^16.9.16 || ^17.0.0
+    cypress: "*"
+    react: ^=16.x || ^=17.x
+    react-dom: ^=16.x || ^=17.x
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: d6c55dd55352022cc7c0e8d7e28b08472f90a21379dbb6cf341aa8779a4aed77bb39136415905e2f1a2d75c376965a8da116b68ac201a8125e516ed0a9699100
   languageName: node
   linkType: hard
 
@@ -3789,7 +3804,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^8.5.0":
+"@testing-library/cypress@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "@testing-library/cypress@npm:8.0.3"
+  dependencies:
+    "@babel/runtime": ^7.14.6
+    "@testing-library/dom": ^8.1.0
+  peerDependencies:
+    cypress: ^2.1.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
+  checksum: 319f6c7297f85e5673882a71009b5d5b576006f986d87a6ca6f2f8c679d96d9779f3ddbc01654b5a943407fa91192814f250835ce01f153e33ef24818cf1bf20
+  languageName: node
+  linkType: hard
+
+"@testing-library/dom@npm:^8.1.0, @testing-library/dom@npm:^8.5.0":
   version: 8.17.1
   resolution: "@testing-library/dom@npm:8.17.1"
   dependencies:
@@ -16262,6 +16289,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "react-recipes@workspace:."
   dependencies:
+    "@cypress/react": ^6.1.0
     "@storybook/addon-a11y": ^6.5.10
     "@storybook/addon-actions": ^6.5.10
     "@storybook/addon-controls": ^6.5.10
@@ -16272,6 +16300,7 @@ __metadata:
     "@storybook/manager-webpack5": ^6.5.10
     "@storybook/preset-create-react-app": ^4.1.2
     "@storybook/react": ^6.5.10
+    "@testing-library/cypress": ^8.0.3
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.3.0
     "@testing-library/user-event": ^13.5.0

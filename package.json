@@ -11,6 +11,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@cypress/react": "^6.1.0",
     "@storybook/addon-a11y": "^6.5.10",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-controls": "^6.5.10",
@@ -21,6 +22,7 @@
     "@storybook/manager-webpack5": "^6.5.10",
     "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.5.10",
+    "@testing-library/cypress": "^8.0.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -42,7 +44,9 @@
     "coverage": "npm run test -- --coverage --watchAll=false",
     "cypress": "cypress open",
     "e2e": "CYPRESS_retries=3 CYPRESS_coverage=false CYPRESS_integrationFolder=cypress/e2e/ cypress run --browser chrome",
-    "e2e:watch": "CYPRESS_coverage=false CYPRESS_integrationFolder=cypress/e2e/ cypress open-ct"
+    "e2e:watch": "CYPRESS_coverage=false CYPRESS_integrationFolder=cypress/e2e/ cypress open --e2e",
+    "component": "CYPRESS_retries=3 CYPRESS_coverage=false CYPRESS_integrationFolder=cypress/component/ cypress run --browser chrome",
+    "component:watch": "CYPRESS_coverage=false CYPRESS_integrationFolder=cypress/component/ cypress open --component"
   },
   "eslintConfig": {
     "extends": [
