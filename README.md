@@ -104,18 +104,19 @@ For the purpose of "best" practises, I will write down all the things I have inc
 - Download and install **[yarn](https://classic.yarnpkg.com/en/)** or convert this using npm and generate a package.lock file
 - Install **[visual studio code](https://code.visualstudio.com/)** as an ide (recommended) and install all react friendly snippets, helpers, linters to make development easier and faster
 
-| `yarn start`               | Start the application                                        |
+| Command                    | **Description**                                              |
 | -------------------------- | ------------------------------------------------------------ |
-| **`yarn build`**           | **Build a releaseable application**                          |
-| **`yarn test`**            | **Unit tests for the application**                           |
-| **`yarn install`**         | **Install the packages found within the yarn lock file**     |
-| **`yarn storybook`**       | **Start story book to visualise component scenarios**        |
-| **`yarn build-storybook`** | **Build storybook to release somewhere**                     |
-| **`yarn coverage`**        | **Run unit test coverage**                                   |
-| **`yarn e2e`**             | **Run e2e tests in headless mode for a CI pipepline**        |
-| **`yarn e2e:watch`**       | **Run e2e tests in watch mode with ui to filter and develop Cypress tests** |
-| **`yarn component`**       | **Run Cypress unit/component tests as an alternative to the default jest tests as a more visual test framework for a CI pipeline** |
-| **`yarn component`**       | **Run Cypress unit/component test in developer mode**        |
+| **`yarn start`**           | Start the application                                        |
+| **`yarn build`**           | Build a releaseable application                              |
+| **`yarn test`**            | Unit tests for the application                               |
+| **`yarn install`**         | Install the packages found within the yarn lock file         |
+| **`yarn storybook`**       | Start story book to visualise component scenarios            |
+| **`yarn build-storybook`** | Build storybook to release somewhere                         |
+| **`yarn coverage`**        | Run unit test coverage                                       |
+| **`yarn e2e`**             | Run e2e tests in headless mode for a CI pipepline            |
+| **`yarn e2e:watch`**       | Run e2e tests in watch mode with ui to filter and develop Cypress tests |
+| **`yarn component`**       | Run Cypress unit/component tests as an alternative to the default jest tests as a more visual test framework for a CI pipeline |
+| **`yarn component`**       | Run Cypress unit/component test in developer mode            |
 |                            |                                                              |
 
 # Getting Started with Create React App
