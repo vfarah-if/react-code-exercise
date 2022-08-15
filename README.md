@@ -102,7 +102,7 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
 - Download or install [node](https://nodejs.org/en/download/) or use [nvm](https://heynode.com/tutorial/install-nodejs-locally-nvm/)
 - Download and install **[yarn](https://classic.yarnpkg.com/en/)** or convert this using npm and generate a package.lock file
-- Install **[visual studio code](https://code.visualstudio.com/)** as an ide (recommended) and install all react friendly snippets, helpers, linters to make development easier and faster
+- Install **[visual studio code](https://code.visualstudio.com/)** as an ide, recommended, and install all react friendly snippets, helpers, linters to make development easier and faster. Choosing frameworks is important for repetitive tasks, "don't be a plumber"
 
 | Command                    | **Description**                                              |
 | -------------------------- | ------------------------------------------------------------ |
@@ -116,7 +116,7 @@ For the purpose of "best" practises, I will write down all the things I have inc
 | **`yarn e2e`**             | Run e2e tests in headless mode for a CI pipepline            |
 | **`yarn e2e:watch`**       | Run e2e tests in watch mode with ui to filter and develop Cypress tests |
 | **`yarn component`**       | Run Cypress unit/component tests as an alternative to the default jest tests as a more visual test framework for a CI pipeline |
-| **`yarn component`**       | Run Cypress unit/component test in developer mode            |
+| **`yarn component:watch`** | Run Cypress unit/component test in developer mode            |
 |                            |                                                              |
 
 # Getting Started with Create React App

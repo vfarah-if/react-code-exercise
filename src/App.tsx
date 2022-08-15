@@ -19,12 +19,14 @@ function App() {
         >
           Learn React
         </a>
-        <Button
-          label='Test'
-          primary={true}
-          backgroundColor='gray'
-          onClick={() => alert('Test click event')}
-        />
+        <div className='App-button'>
+          <Button
+            label='Test'
+            primary={true}
+            backgroundColor='gray'
+            onClick={() => alert('Test click event')}
+          />
+        </div>
       </header>
     </div>
   );

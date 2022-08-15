@@ -2,7 +2,7 @@
 
 exports[`Button should create a geen background button: green background button 1`] = `
 <button
-  class="sc-bczRLJ kdthhz"
+  class="sc-bczRLJ bTKfim"
   label="Custom background"
 >
   Custom background
@@ -11,7 +11,7 @@ exports[`Button should create a geen background button: green background button 
 
 exports[`Button should create a large button: large button 1`] = `
 <button
-  class="sc-bczRLJ cGAcOK"
+  class="sc-bczRLJ iXTWpA"
   label="Button"
 >
   Button
@@ -20,7 +20,7 @@ exports[`Button should create a large button: large button 1`] = `
 
 exports[`Button should create a primary button: primary button 1`] = `
 <button
-  class="sc-bczRLJ hKYNbp"
+  class="sc-bczRLJ hQMoyX"
   label="Button"
 >
   Button
@@ -29,7 +29,7 @@ exports[`Button should create a primary button: primary button 1`] = `
 
 exports[`Button should create a secondry button: secondry button 1`] = `
 <button
-  class="sc-bczRLJ jGJCSX"
+  class="sc-bczRLJ cHHlvV"
   label="Button"
 >
   Button
@@ -38,7 +38,7 @@ exports[`Button should create a secondry button: secondry button 1`] = `
 
 exports[`Button should create a small secondry button: small button 1`] = `
 <button
-  class="sc-bczRLJ jcxdVN"
+  class="sc-bczRLJ jOKaoj"
   label="Button"
 >
   Button
@@ -47,7 +47,7 @@ exports[`Button should create a small secondry button: small button 1`] = `
 
 exports[`Button should create a yellow labeless button as alternative test if devaiting from convenrional tests: labelless yellow button 1`] = `
 <button
-  class="sc-bczRLJ jGJCSX"
+  class="sc-bczRLJ gdVEtO"
   label=""
   style="background-color: yellow;"
 />
