@@ -11,8 +11,8 @@ describe('App', () => {
 
   test('should render a test button', () => {
     render(<App />);
-    const linkElement = screen.getByRole('button');
-    expect(linkElement).toBeInTheDocument();
-    expect(linkElement).toHaveTextContent('Test');
+    const buttonElement = screen.getByRole('button');
+    expect(buttonElement).toBeInTheDocument();
+    expect(buttonElement).toHaveTextContent('Test');
   });
 });
