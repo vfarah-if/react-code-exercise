@@ -97,7 +97,7 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
 9. [**React testing library**](https://testing-library.com/docs/react-testing-library/cheatsheet/) is very useful for unit testing
 
-10. **Error handling** and a generic error handling library that I feel solves error handling adequatlly in REACT is [react-error-boundary](https://www.npmjs.com/package/react-error-boundary?activeTab=dependencies)
+10. **Error handling** with [react-error-boundary](https://www.npmjs.com/package/react-error-boundary?activeTab=dependencies) library that I feel solves this problem adequatlly in REACT and is light
 
 11. **Next** it is up to you to practise using everything that has been configured here. Fork and branch this repo and you will have an intuitive starting point to just practise all these skills without setting up anything. Go ahead and delete what exists once you have your ideas in place and make this yours
 
