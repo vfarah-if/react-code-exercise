@@ -2,7 +2,7 @@
 
 The purpose if this is to create a quick latest template (August 2022), representing tools that make developing react applications and katas as easy as possible and allow developers to pracise on the latest versions of each space.
 
-For the purpose of "best" practises, I will write down all the things I have included as purposeful key decisions to help me develop this library.
+For the purpose of "best" practises, I will write down all the things I have included as purposeful key decisions to help me develop this starter kit with all the components/packages I have used to make this process quicker.
 
 1. **Create [react app using typescript](https://create-react-app.dev/docs/adding-typescript/)** (see below for more details)
 
