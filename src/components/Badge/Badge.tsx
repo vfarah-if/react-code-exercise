@@ -14,10 +14,10 @@ export const FONT_SIZE = {
 
 interface BadgeProps {
   label: string;
-  borderColour: string;
-  textColour: string;
-  fontSize: string;
-  children: React.ReactNode;
+  borderColour?: string;
+  textColour?: string;
+  fontSize?: string;
+  children?: React.ReactNode;
 }
 
 const StyledBadge = styled('span')`
@@ -41,6 +41,7 @@ const Badge: React.FC<BadgeProps> = ({
     borderColour={borderColour}
     textColour={textColour}
     fontSize={fontSize}
+    label={label}
   >
     {label}
     {children}

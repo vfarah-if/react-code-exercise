@@ -1,4 +1,5 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { Button, ButtonProps } from './Button';
 
@@ -10,7 +11,9 @@ export default {
   },
 } as Meta;
 
-const Template: Story<ButtonProps> = args => <Button {...args} />;
+const Template: Story<ButtonProps> = args => (
+  <Button onClick={action('onClick clicked')} {...args} />
+);
 
 export const PrimaryButton = Template.bind({});
 PrimaryButton.args = {
