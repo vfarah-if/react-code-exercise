@@ -7863,9 +7863,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:^10.4.0":
-  version: 10.4.0
-  resolution: "cypress@npm:10.4.0"
+"cypress@npm:10.7.0":
+  version: 10.7.0
+  resolution: "cypress@npm:10.7.0"
   dependencies:
     "@cypress/request": ^2.88.10
     "@cypress/xvfb": ^1.2.4
@@ -7911,7 +7911,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: 3f7385e076ac936683d1d1d104a7183f2e61ad0f4c901aff07146ae2e10197e8314019dcdfb6c188312fbf1be05484291f1cf8d49c4c37cf6485103c4ac5303e
+  checksum: ef8a5ae54f3404f7926e1e248ba7a27c7f66e654a9603bf9df6366731d8dd75455f6ec9cc34d7e55e1a8c3cb8e0e36ce59add81b7b14466f2063cfe45e6c00f4
   languageName: node
   linkType: hard
 
@@ -16244,6 +16244,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-error-boundary@npm:^3.1.4":
+  version: 3.1.4
+  resolution: "react-error-boundary@npm:3.1.4"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+  peerDependencies:
+    react: ">=16.13.1"
+  checksum: f36270a5d775a25c8920f854c0d91649ceea417b15b5bc51e270a959b0476647bb79abb4da3be7dd9a4597b029214e8fe43ea914a7f16fa7543c91f784977f1b
+  languageName: node
+  linkType: hard
+
 "react-error-overlay@npm:^6.0.11":
   version: 6.0.11
   resolution: "react-error-overlay@npm:6.0.11"
@@ -16309,9 +16320,10 @@ __metadata:
     "@types/react": ^18.0.17
     "@types/react-dom": ^18.0.6
     "@types/styled-components": ^5.1.26
-    cypress: ^10.4.0
+    cypress: 10.7.0
     react: ^18.2.0
     react-dom: ^18.2.0
+    react-error-boundary: ^3.1.4
     react-scripts: 5.0.1
     styled-components: ^5.3.5
     typescript: ^4.7.4

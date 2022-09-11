@@ -15,9 +15,9 @@ For the purpose of "best" practises, I will write down all the things I have inc
      npm install --save typescript @types/node @types/react @types/react-dom @types/jest
      ```
 
-   - This comes default with **[react testing-library](https://testing-library.com/docs/react-testing-library/intro/)** and look at the [cheat sheet](https://testing-library.com/docs/react-testing-library/cheatsheet/) for testing basics. The advantage of this library is its simplicity, as well as "*[The more your tests resemble the way your software is used, the more confidence they can give you.](https://twitter.com/kentcdodds/status/977018512689455106)"*
+   - This comes default with **[react testing-library](https://testing-library.com/docs/react-testing-library/intro/)** and look at the [cheat sheet](https://testing-library.com/docs/react-testing-library/cheatsheet/) for testing basics. The advantage of this library is its simplicity, as well as "_[The more your tests resemble the way your software is used, the more confidence they can give you.](https://twitter.com/kentcdodds/status/977018512689455106)"_
 
-   - Seperate dev package from production dependencies, which is the trivial issue with the way *create app* does wrong in the beginning
+   - Seperate dev package from production dependencies, which is the trivial issue with the way _create app_ does wrong in the beginning
 
      ![image-20220814112409895](./readme-images/add-dev-packages.png)
 
@@ -25,28 +25,31 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
    ```bash
    # Note this is different to the documentation https://github.com/storybookjs/storybook/issues/13593
-   npm i --save-dev webpack @storybook/react @storybook/addon-a11y @storybook/addon-actions @storybook/addon-docs @storybook/addon-storysource    
+   npm i --save-dev webpack @storybook/react @storybook/addon-a11y @storybook/addon-actions @storybook/addon-docs @storybook/addon-storysource
    npx storybook init typescript
    ```
 
    ![image-20220814123850841](./readme-images/storybook-example.png)
 
-   - Configure main.js with all the necessary addons, and see the results within the docs, 
+   - Configure main.js with all the necessary addons, and see the results within the docs,
 
      ```javascript
      module.exports = {
-       stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+       stories: [
+         '../src/**/*.stories.mdx',
+         '../src/**/*.stories.@(js|jsx|ts|tsx)',
+       ],
        addons: [
          '@storybook/preset-create-react-app',
          '@storybook/addon-a11y',
          '@storybook/addon-docs',
          '@storybook/addon-controls',
+         '@storybook/addon-actions',
        ],
        core: {
          builder: 'webpack5',
        },
      };
-     
      ```
 
    ![image-20220814153103728](./readme-images/storybook-docs.png)
@@ -57,14 +60,14 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
    ```bash
    npm i --save styled-components
-   npm i --save-dev @types/styled-components       
+   npm i --save-dev @types/styled-components
    ```
 
-4. Added a **button component** as an example of how I storybook test drive my code (**SB TDD**),  as well as making sure storybook is working as expected. This is not unique to me, a pattern that storybook endorses and drives, which I found to be particulary useful when developing complex visual components. I usually start with creating a component within storybook, which represents starting block, even before I have written a test. The only reason I deviate from classical TDD, *in only this case*, is because I can cognitively get my head around CSS, React, Javascript easier through Storybook visual components, which visualises what I want to do a lot easier. You can train yourself to do either, but as a visual person and experience with many frontend developers, I felt this was a more intuitive way for developers to start doing TDD or SB TDD and seemed to produce the same result I would get from traditional TDD. Then I can take those scenarios and seal them as snapshot tests and then simply write behavioural tests only (which can be done test first style). I can also install storybook testing which automatically generates the snapshots and makes sure the storybook is sealed automatically without having to do these tests manually. I personally did not go with that, on this occasion, as I wanted this to be explicit about what got tested and where these tests where generated.
+4. Added a **button component** as an example of how I storybook test drive my code (**SB TDD**), as well as making sure storybook is working as expected. This is not unique to me, a pattern that storybook endorses and drives, which I found to be particulary useful when developing complex visual components. I usually start with creating a component within storybook, which represents starting block, even before I have written a test. The only reason I deviate from classical TDD, _in only this case_, is because I can cognitively get my head around CSS, React, Javascript easier through Storybook visual components, which visualises what I want to do a lot easier. You can train yourself to do either, but as a visual person and experience with many frontend developers, I felt this was a more intuitive way for developers to start doing TDD or SB TDD and seemed to produce the same result I would get from traditional TDD. Then I can take those scenarios and seal them as snapshot tests and then simply write behavioural tests only (which can be done test first style). I can also install storybook testing which automatically generates the snapshots and makes sure the storybook is sealed automatically without having to do these tests manually. I personally did not go with that, on this occasion, as I wanted this to be explicit about what got tested and where these tests where generated.
 
    ![image-20220814132357940](./readme-images/sb-tdd-scenario-green-button.png)
 
-5. Created a **code coverage** output to add to some CI pipeline to make sure a minimum standard is met. This value can be driven by the team and can be seen as a [*useless metric*](https://betterprogramming.pub/is-code-coverage-a-useless-metric-bc76e0fde9e), but I like to have it so I can make sure I did TDD all the happy and unhappy test paths of the component
+5. Created a **code coverage** output to add to some CI pipeline to make sure a minimum standard is met. This value can be driven by the team and can be seen as a [_useless metric_](https://betterprogramming.pub/is-code-coverage-a-useless-metric-bc76e0fde9e), but I like to have it so I can make sure I did TDD all the happy and unhappy test paths of the component
 
    ![image-20220814135213339](./readme-images/covereage.png)
 
@@ -74,7 +77,7 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
    ![image-20220814154257058](./readme-images/todo.png)
 
-8. [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) is escalating the power of what can be achieved. Essentially the tools help you understand how tests, component and e2e can be acheived with ease. I don't like the speed, feel the UI can be excessive, but I have seen junior and senior developers writing tests very quickly and efficiently using this framework 
+8. [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) is escalating the power of what can be achieved. Essentially the tools help you understand how tests, component and e2e can be acheived with ease. I don't like the speed, feel the UI can be excessive, but I have seen junior and senior developers writing tests very quickly and efficiently using this framework
 
    ![image-20220814172608521](./readme-images/cypress-intro.png)
 
@@ -88,13 +91,15 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
      ![image-20220815202930710](./readme-images/cypress-component-test.png)
 
-   - I really like this [cheatsheet](https://cheatography.com/aiqbal/cheat-sheets/cypress-io/) when I am working through Cypress 
+   - I really like this [cheatsheet](https://cheatography.com/aiqbal/cheat-sheets/cypress-io/) when I am working through Cypress
 
    - I added the cypress testing library for developers who like react testing library
 
 9. [**React testing library**](https://testing-library.com/docs/react-testing-library/cheatsheet/) is very useful for unit testing
 
-10. **Next** it is up to you to practise using everything that has been configured here. Fork and branch this repo and you will have an intuitive starting point to just practise all these skills without setting up anything. Go ahead and delete what exists once you have your ideas in place and make this yours
+10. **Error handling** and a generic error handling library that I feel solves error handling adequatlly in REACT is [react-error-boundary](https://www.npmjs.com/package/react-error-boundary?activeTab=dependencies)
+
+11. **Next** it is up to you to practise using everything that has been configured here. Fork and branch this repo and you will have an intuitive starting point to just practise all these skills without setting up anything. Go ahead and delete what exists once you have your ideas in place and make this yours
 
 ## Environment
 
@@ -104,20 +109,20 @@ For the purpose of "best" practises, I will write down all the things I have inc
 - Download and install **[yarn](https://classic.yarnpkg.com/en/)** or convert this using npm and generate a package.lock file
 - Install **[visual studio code](https://code.visualstudio.com/)** as an ide, recommended, and install all react friendly snippets, helpers, linters to make development easier and faster. Choosing frameworks is important for repetitive tasks, "don't be a plumber"
 
-| Command                    | **Description**                                              |
-| -------------------------- | ------------------------------------------------------------ |
-| **`yarn start`**           | Start the application                                        |
-| **`yarn build`**           | Build a releaseable application                              |
-| **`yarn test`**            | Unit tests for the application                               |
-| **`yarn install`**         | Install the packages found within the yarn lock file         |
-| **`yarn storybook`**       | Start story book to visualise component scenarios            |
-| **`yarn build-storybook`** | Build storybook to release somewhere                         |
-| **`yarn coverage`**        | Run unit test coverage                                       |
-| **`yarn e2e`**             | Run e2e tests in headless mode for a CI pipepline            |
-| **`yarn e2e:watch`**       | Run e2e tests in watch mode with ui to filter and develop Cypress tests |
+| Command                    | **Description**                                                                                                                |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **`yarn start`**           | Start the application                                                                                                          |
+| **`yarn build`**           | Build a releaseable application                                                                                                |
+| **`yarn test`**            | Unit tests for the application                                                                                                 |
+| **`yarn install`**         | Install the packages found within the yarn lock file                                                                           |
+| **`yarn storybook`**       | Start story book to visualise component scenarios                                                                              |
+| **`yarn build-storybook`** | Build storybook to release somewhere                                                                                           |
+| **`yarn coverage`**        | Run unit test coverage                                                                                                         |
+| **`yarn e2e`**             | Run e2e tests in headless mode for a CI pipepline                                                                              |
+| **`yarn e2e:watch`**       | Run e2e tests in watch mode with ui to filter and develop Cypress tests                                                        |
 | **`yarn component`**       | Run Cypress unit/component tests as an alternative to the default jest tests as a more visual test framework for a CI pipeline |
-| **`yarn component:watch`** | Run Cypress unit/component test in developer mode            |
-|                            |                                                              |
+| **`yarn component:watch`** | Run Cypress unit/component test in developer mode                                                                              |
+|                            |                                                                                                                                |
 
 # Getting Started with Create React App
 
