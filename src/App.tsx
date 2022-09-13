@@ -1,5 +1,4 @@
 import React from 'react';
-import { ErrorBoundary } from 'react-error-boundary';
 import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button';
