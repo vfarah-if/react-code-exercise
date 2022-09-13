@@ -3,13 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ErrorBoundary } from 'react-error-boundary';
+import UnhandledError from './components/UnhandledError';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <ErrorBoundary
+      FallbackComponent={UnhandledError}
+      onError={(error: Error) =>
+        console.warn('Log to Sentry or something special', error)
+      }
+    >
+      <App />
+    </ErrorBoundary>
   </React.StrictMode>
 );
 
