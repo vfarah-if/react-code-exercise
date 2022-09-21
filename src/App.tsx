@@ -5,6 +5,7 @@ import Button from './components/Button';
 import UnhandledError from './components/UnhandledError';
 
 function App() {
+  const handleTestClick = () => alert(`Test clicked`);
   return (
     <div className='App'>
       <header className='App-header'>
@@ -31,9 +32,7 @@ function App() {
             label='Test'
             primary={true}
             backgroundColor='gray'
-            onClick={() => {
-              throw new Error('Test unhandled exceptions');
-            }}
+            onClick={handleTestClick}
           />
         </div>
       </header>
