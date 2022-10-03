@@ -8,10 +8,12 @@
  ✔ Document this TODO list in more detail @low @done(22-08-14 15:44)
  ✔ Add Cypress e2e testing framework to project @today @done(22-08-14 20:03)
  ✔ Add Error handling @high @done(22-09-12 00:01)
- ☐ Add react router and an about page with Vincent details @high
+ ☐ Add dependabot @high
+    ☐ https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates
+ ☐ Add react router and an about page with my details @high
  ☐ Add bootstrap @low
  ☐ Add react toaster @low
- ☐ Add dependabot @low
  ☐ Add circleci or heroku deploy @low
  ☐ Make sure no hints and warnings ready for dev to occur @low
  ☐ Do a small kata in a branch to test out how this will work @high
+ ☐ Build a docker file that builds this to not pollute the environment @high
