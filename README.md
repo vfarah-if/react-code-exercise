@@ -63,7 +63,7 @@ For the purpose of "best" practises, I will write down all the things I have inc
    npm i --save-dev @types/styled-components
    ```
 
-4. Added a **button component** as an example of how I storybook test drive my code (**SB TDD**), as well as making sure storybook is working as expected. This is not unique to me, a pattern that storybook endorses and drives, which I found to be particulary useful when developing complex visual components. I usually start with creating a component within storybook, which represents starting block, even before I have written a test. The only reason I deviate from classical TDD, _in only this case_, is because I can cognitively get my head around CSS, React, Javascript easier through Storybook visual components, which visualises what I want to do a lot easier. You can train yourself to do either, but as a visual person and experience with many frontend developers, I felt this was a more intuitive way for developers to start doing TDD or SB TDD and seemed to produce the same result I would get from traditional TDD. Then I can take those scenarios and seal them as snapshot tests and then simply write behavioural tests only (which can be done test first style). I can also install storybook testing which automatically generates the snapshots and makes sure the storybook is sealed automatically without having to do these tests manually. I personally did not go with that, on this occasion, as I wanted this to be explicit about what got tested and where these tests where generated.
+4. Added a **button component** as an example of how I storybook test drive my code (**SB TDD**), as well as making sure storybook is working as expected. This is not unique to me, a pattern that storybook endorses and drives, which I found to be particulary useful when developing complex visual components. I usually start with creating a component within storybook, which represents starting point but necessarily a best practise test, even before I have written a test. The only reason I deviate from classical TDD, _in only this case_, is because I can cognitively get my head around CSS, React, Javascript easier through Storybook visual components, which visualises what I want to do a lot easier and so the code quality is not really reduced and the testing tools are helpful for several aspects of what needs to be solved. You can train yourself to do either, but as a visual person and experience with many frontend developers, I felt this was a more intuitive way for developers to start doing TDD or SB TDD and seemed to produce the same result I would get from traditional TDD. Then I can take those scenarios and seal them as snapshot tests, not recommended but simple for starters, and then simply write behavioural tests only (which can be done test first style). I can also install storybook testing which automatically generates the snapshots and makes sure the storybook is sealed automatically without having to do these tests manually. I personally did not go with the latter, on this occasion, as I wanted this to be explicit about what got tested and where these tests where generated.
 
    ![image-20220814132357940](./readme-images/sb-tdd-scenario-green-button.png)
 
@@ -71,7 +71,7 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
    ![image-20220814135213339](./readme-images/covereage.png)
 
-6. Add `yarn` and `yarn interactive` by installing `yarn plugin import interactive-tools`
+6. Add `yarn` and `yarn --interactive or yarn upgrade-interactive [--latest] by installing `yarn plugin import interactive-tools` and [upgrading interactively](https://classic.yarnpkg.com/lang/en/docs/cli/upgrade-interactive/)
 
 7. Added a **todo list** with a vscode extension, which has helped me to understand the best way create a list of TODO's which also help to keep a history of architectural decisions, without formalising this as an official [**ADR**](https://github.com/joelparkerhenderson/architecture-decision-record), but helps to create a thought thread for developers mobbing or individuals focusing on what has been done and what will be done
 
@@ -111,7 +111,9 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
     ![image-20221120095951123](./readme-images/code-scanning.png)
 
-13. **Next** it is up to you to practise using everything that has been configured here. Fork and branch this repo and you will have an intuitive starting point to just practise all these skills without setting up anything. Go ahead and delete what exists once you have your ideas in place and make this yours
+13. [**A**rchitectural **D**ecision **R**ecords](https://github.com/joelparkerhenderson/architecture-decision-record) is a document that captures an important architecture decision made along with its context and consequences. I decided to keep this lite and utiise [adr-tools](https://github.com/npryce/adr-tools) which gave me quick ways of generating this information. Feel free to do this manually but if you like a little help on the structure, install it for your operating system
+
+14. **Next** it is up to you to practise using everything that has been configured here. Fork and branch this repo and you will have an intuitive starting point to just practise all these skills without setting up anything. Go ahead and delete what exists once you have your ideas in place and make this yours
 
 ## Environment
 

@@ -11,6 +11,8 @@
  ✔ Add dependabot @high @done(22-11-20 09:38)
     ✔ https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates @done(22-11-20 09:38)
     ✔ Document links about @done(22-11-20 09:38)
+ ✔ Add Architecural Decision Records Framework https://github.com/joelparkerhenderson/architecture-decision-record @low @done(22-11-20 10:42)
+   ✔ Install https://github.com/npryce/adr-tools @done(22-11-20 10:42)
  ☐ Add react router and an about page with my details @high
  ☐ Add bootstrap @low
  ☐ Add react toaster @low
