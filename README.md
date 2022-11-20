@@ -103,6 +103,10 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
     ![image-20221120095453735](./readme-images/dependabot-alerts.png)
 
+    After solving the critical issues,I am left with high issues to solve when there are less pressing issues
+
+    ![image-20221120101724716](./readme-images/dependabot-solved.png)
+
 12. Add [code scanning](https://github.com/vfarah-if/react-code-exercise/actions/new?category=security) to make sure to do code evaluation through a more advanced level
 
     ![image-20221120095951123](./readme-images/code-scanning.png)
