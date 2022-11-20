@@ -8,8 +8,9 @@
  ✔ Document this TODO list in more detail @low @done(22-08-14 15:44)
  ✔ Add Cypress e2e testing framework to project @today @done(22-08-14 20:03)
  ✔ Add Error handling @high @done(22-09-12 00:01)
- ☐ Add dependabot @high
-    ☐ https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates
+ ✔ Add dependabot @high @done(22-11-20 09:38)
+    ✔ https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates @done(22-11-20 09:38)
+    ✔ Document links about @done(22-11-20 09:38)
  ☐ Add react router and an about page with my details @high
  ☐ Add bootstrap @low
  ☐ Add react toaster @low
