@@ -26,36 +26,36 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: GitHub Action for Yarn
-      uses: Borales/actions-yarn@v4.2.0
+      uses: borales/actions-yarn@v4.2.0
     - name: Run install
-      uses: Borales/actions-yarn@v4.2.0
+      uses: borales/actions-yarn@v4.2.0
       with:
         cmd: install # will run `yarn install` command
     - name: Build production bundle
-      uses: Borales/actions-yarn@v4.2.0
+      uses: borales/actions-yarn@v4.2.0
       with:
         cmd: build # will run `yarn build` command
     - name: Test the app
-      uses: Borales/actions-yarn@v4.2.0
+      uses: borales/actions-yarn@v4.2.0
       with:
         cmd: test # will run `yarn test` command
     - name: Generate coverage
-      uses: Borales/actions-yarn@v4.2.0
+      uses: borales/actions-yarn@v4.2.0
       with:
         cmd: coverage # will run `yarn coverage` command
     - name: Build storybook
-      uses: Borales/actions-yarn@v4.2.0
+      uses: borales/actions-yarn@v4.2.0
       with:
         cmd: build-storybook # will run `yarn build-storybook` command
     - name: Build storybook
-      uses: Borales/actions-yarn@v4.2.0
+      uses: borales/actions-yarn@v4.2.0
       with:
         cmd: build-storybook # will run `yarn build-storybook` command
     - name: Build Cypress e2e
-      uses: Borales/actions-yarn@v4.2.0
+      uses: borales/actions-yarn@v4.2.0
       with:
         cmd: e2e # will run `yarn e2e` command
     - name: Build Cypress component
-      uses: borales/actions-yarn@v4
+      uses: borales/actions-yarn@v4.2.0
       with:
         cmd: component # will run `yarn component` command
