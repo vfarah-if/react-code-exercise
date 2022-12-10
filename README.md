@@ -113,7 +113,15 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
 13. [**A**rchitectural **D**ecision **R**ecords](https://github.com/joelparkerhenderson/architecture-decision-record) is a document that captures an important architecture decision made along with its context and consequences. I decided to keep this lite and utiise [adr-tools](https://github.com/npryce/adr-tools) which gave me quick ways of generating this information. Feel free to do this manually but if you like a little help on the structure, install it for your operating system
 
-14. **Next** it is up to you to practise using everything that has been configured here. Fork and branch this repo and you will have an intuitive starting point to just practise all these skills without setting up anything. Go ahead and delete what exists once you have your ideas in place and make this yours
+14. Use [github actions](https://docs.github.com/en/actions) to run tests in different versions of node and trying to setup everything in the packages to verify all the bits of the code when pushing a branch or pulling
+
+    a. Setup [node](https://github.com/actions/starter-workflows/blob/main/ci/node.js.yml)
+
+    b. Setup [yarn](https://github.com/marketplace/actions/github-action-for-yarn)
+
+    c. TODO: See it running and in action
+
+15. **Next** it is up to you to practise using everything that has been configured here. Fork and branch this repo and you will have an intuitive starting point to just practise all these skills without setting up anything. Go ahead and delete what exists once you have your ideas in place and make this yours
 
 ## Environment
 

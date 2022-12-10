@@ -27,11 +27,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Run install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install # will run `yarn install` command
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # if needed
+      uses: borales/actions-yarn@v4
+      with:
+        cmd: install # will run `yarn install` command
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # if needed
     - name: Build production bundle
       uses: borales/actions-yarn@v4
       with:
