@@ -29,6 +29,7 @@ function App() {
         ></UnhandledError>
         <div className='App-button'>
           <Button
+            data-cy='test'
             label='Test'
             primary={true}
             backgroundColor='gray'
