@@ -119,7 +119,7 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
     b. Setup [yarn](https://github.com/marketplace/actions/github-action-for-yarn)
 
-    c. TODO: See it running and in action
+    c. TODO: See it running and in action ...
 
 15. **Next** it is up to you to practise using everything that has been configured here. Fork and branch this repo and you will have an intuitive starting point to just practise all these skills without setting up anything. Go ahead and delete what exists once you have your ideas in place and make this yours
 
