@@ -16,7 +16,8 @@
  ☐ Add react router and an about page with my details @high
  ☐ Add bootstrap @low
  ☐ Add react toaster @low
- ☐ Add circleci or heroku deploy @low
+ ✔ Add circleci or heroku deploy @low @done(22-12-12 23:07)
+   ✔ Changed for github actions @high @done(22-12-12 23:07)
  ☐ Make sure no hints and warnings ready for dev to occur @low
  ☐ Do a small kata in a branch to test out how this will work @high
  ☐ Build a docker file that builds this to not pollute the environment @high
