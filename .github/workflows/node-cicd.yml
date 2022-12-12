@@ -48,9 +48,4 @@ jobs:
 
     - name: Unit Test components
       run: yarn coverage
-   
-    - name: E2E Cypress Tests
-      run: yarn e2e
     
-    - name: Component Cypress Tests
-      run: yarn component
