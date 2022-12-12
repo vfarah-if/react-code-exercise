@@ -129,9 +129,7 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
     f. Yarn **coverage**
 
-    g. Yarn **e2e**
-
-    h. Yarn **component** 
+    g. Yarn [Cypress](https://github.com/cypress-io/github-action)
 
     ![Git Actions](./readme-images/actions.png)
 
