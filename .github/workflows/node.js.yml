@@ -16,18 +16,29 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x, 18.x]
+        node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v3      
+    – name: Install yarn
+      run: npm install -g yarn
+    – name: Get yarn cache directory path
+      id: yarn-cache-dir-path
+      run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+    – name: Cache yarn dependencies
+      uses: actions/cache@v2
+      id: yarn-cache
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        path: |
+          ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          **/node_modules
+        key: vivid-cache-yarn-${{ hashFiles('**/package.json') }}
     - name: Install dependencies 📦
       run: yarn install --frozen-lockfile
-    - uses: borales/actions-yarn@v2.0.0
-      with:
-        cmd: test
+    – name: Build components
+      run: yarn build
+    – name: Unit Test components
+      run: yarn test
