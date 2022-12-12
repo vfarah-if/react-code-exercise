@@ -99,7 +99,7 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
 10. **Error handling** with [react-error-boundary](https://www.npmjs.com/package/react-error-boundary?activeTab=dependencies) library that I feel solves this problem adequatlly in REACT and is light
 
-11. [**Dependabot**](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates) is a way of for GitHub dependency management tools to help you handle the security risks and maintenance requirements of incorporating any **security risks** or **vulnerabilities** that are introduced because you rely on software that is maintained outside of your project. By doing nothing to a repository you are automatically generating *tech debt*, so automate this on a CI pipeline to autimatically checkin based on a successfull build and you will reduce the need for developers to do this, until there is a breaking change, which is inevitable. Configure the yml file through GitHub and there will be a
+11. [**Dependabot**](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates) is a way of for GitHub dependency management tools to help you handle the security risks and maintenance requirements of incorporating any **security risks** or **vulnerabilities** that are introduced because you rely on software that is maintained outside of your project. By doing nothing to a repository you are automatically generating *tech debt*, so automate this on a CI pipeline to autimatically checkin based on a successfull build and you will reduce the need for developers to do this, until there is a breaking change, which is inevitable. Configure the yml file through GitHub and there will be a. There will also be way to get this to auto merge, see https://blog.somewhatabstract.com/2021/10/11/setting-up-dependabot-with-github-actions-to-approve-and-merge/ for more information
 
     ![image-20221120095453735](./readme-images/dependabot-alerts.png)
 
@@ -129,11 +129,15 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
     f. Yarn **coverage**
 
-    g. Yarn [Cypress](https://github.com/cypress-io/github-action)
+    
 
     ![Git Actions](./readme-images/actions.png)
 
-15. **Next** it is up to you to practise using everything that has been configured here. Fork and branch this repo and you will have an intuitive starting point to just practise all these skills without setting up anything. Go ahead and delete what exists once you have your ideas in place and make this yours
+15. **Yarn** **interactive-update** is most times a lot easier upgrading quick wins to prevent dependabot hell
+
+    ![image-20221212225049267](./readme-images/yarn-upgrade-interactive.png)
+
+16. **Next** it is up to you to practise using everything that has been configured here. Fork and branch this repo and you will have an intuitive starting point to just practise all these skills without setting up anything. Go ahead and delete what exists once you have your ideas in place and make this yours
 
 ## Environment
 
