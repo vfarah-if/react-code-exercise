@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -25,7 +25,7 @@ jobs:
       uses: actions/setup-node@v3
 
     - name: Install yarn
-      run: npm install -g yarn
+      run: npm install -g yarn      
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
       run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
@@ -37,7 +37,6 @@ jobs:
           ${{ steps.yarn-cache-dir-path.outputs.dir }}
           **/node_modules
         key: vivid-cache-yarn-${{ hashFiles('**/package.json') }}
-    
     - name: Install dependencies 📦
       run: yarn install --frozen-lockfile
     

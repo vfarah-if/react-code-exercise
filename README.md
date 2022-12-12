@@ -115,11 +115,25 @@ For the purpose of "best" practises, I will write down all the things I have inc
 
 14. Use [github actions](https://docs.github.com/en/actions) to run tests in different versions of node and trying to setup everything in the packages to verify all the bits of the code when pushing a branch or pulling
 
-    a. Setup [node](https://github.com/actions/starter-workflows/blob/main/ci/node.js.yml)
+    a. CodeQL or Analyse code quality
 
-    b. Setup [yarn](https://github.com/marketplace/actions/github-action-for-yarn)
+    Setup [node](https://github.com/actions/starter-workflows/blob/main/ci/node.js.yml) on 16
 
-    c. TODO: See it running and in action ...
+    b. Setup [yarn](https://github.com/marketplace/actions/github-action-for-yarn) and yarn caching
+
+    c. Yarn **Install dependencies** *locking* the versions to what is in the lock file
+
+    d. Yarn **build**
+
+    e. Yarn **test**
+
+    f. Yarn **coverage**
+
+    g. Yarn **e2e**
+
+    h. Yarn **component** 
+
+    ![Git Actions](./readme-images/actions.png)
 
 15. **Next** it is up to you to practise using everything that has been configured here. Fork and branch this repo and you will have an intuitive starting point to just practise all these skills without setting up anything. Go ahead and delete what exists once you have your ideas in place and make this yours
 
